@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  font-family: sans-serif;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 120px;
+  height: 100vh;
+  background-color: #111;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+}
+
+.choice img {
+  width: 90px;
+  height: 90px;
+  margin: 20px 0;
+  border-radius: 100%;
+  transition: transform 0.2s ease;
+  object-fit: cover;
+  padding-top: 5px;
+}
+
+.choice img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.main {
+  margin: 0 -20px 0 100px;
+  padding: 100px 0 100px 0;
+  background-color: rgb(180, 221, 220);
+  width: 100%;
+  min-height: 100vh;
+ 
+  overflow-x: hidden;
+}
+
+h1 {
+  text-align: center;
+  background-color: #11556e;
+  color: white;
+  padding: 20px;
+  height: fit-content;
+  justify-content: center;
+}
+
+.move-display {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.move-display img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.scoreboard {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  margin-top: 30px;
+}
+
+.scoreboard p {
+  font-size: 2rem;
+  margin: 5px;
+}
+
+.msg-box {
+  text-align: center;
+  margin: 30px 500px -8px 500px;
+  font-size: 1.5rem;
+  background: #064e56;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.video-container video {
+    width: 240px;
+    height: 240px;
+    border-radius: 1rem;
+    object-fit: cover;
+}
+
+.video-container {
+    margin: 20px 0 20px 0;
+}
+
+#computer-move {
+    transform: scaleX(-1);    
+}
+
+.textImg {
+    color: aliceblue;
+    text-align: center;
+}
+
+.reset-btn {
+    background-color: rgb(4, 108, 108);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(241, 243, 245);
+    text-align: center;
+    margin: 20px 678px 10px auto;
+    padding: 4px;
+    height: 40px;
+    border-radius: 10px;
+}
+
+#user-move {
+    margin: 20px 0 50px 0;
+}
+
+#computer-move {
+    margin: 20px 0 20px 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

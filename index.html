@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Stone Paper Scissors Game</title>
+  <link rel="stylesheet" href="paper.css"/>
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar with choices -->
+        <div class="sidebar">
+        <div class="choice" id="stone">
+            <img src="stone.gif" alt="Stone">
+            <p class="textImg stone">Stone</p>
+        </div>
+        <div class="choice" id="paper">
+            <img src="paper.gif" alt="Paper">
+            <p class="textImg paper">Paper</p>
+        </div>
+        <div class="choice" id="scissors">
+            <img src="scissors.gif" alt="Scissors">
+            <p class="textImg scissors">Scissors</p>
+        </div>
+        </div>
+
+        <!-- Main game area -->
+        <div class="main">
+            <h1>Stone Paper Scissors</h1>
+
+            <div class="move-display">
+                <div class="video-container">
+                <p>Your Move:</p>
+                <video id="user-move" autoplay muted />
+                </div>
+                <div class="video-container">
+                <p>Computer's Move:</p>
+                <video id="computer-move" autoplay muted />
+                </div>
+            </div>
+
+            <div class="scoreboard">
+                <div>
+                <p id="user-score">0</p>
+                <p>You</p>
+                </div>
+                <div>
+                <p id="computer-score">0</p>
+                <p>Computer</p>
+                </div>
+            </div>
+
+            <div class="msg-box">
+                <p id="msg">Play your move</p>
+            </div>
+            <button id="resetbtn" class="reset-btn">RESET GAME</button>
+        </div>
+    </div>
+  <script src="scissors.js"></script>
+</body>
+</html>
